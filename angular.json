@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/client",
+            "outputPath": "dist/geolocationclient",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "client:build"
+            "browserTarget": "geolocationclient:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "client:build:production"
+              "browserTarget": "geolocationclient:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "client:build"
+            "browserTarget": "geolocationclient:build"
           }
         },
         "test": {
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "client:serve"
+            "devServerTarget": "geolocationclient:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "client:serve:production"
+              "devServerTarget": "geolocationclient:serve:production"
             }
           }
         },
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "client"
+  "defaultProject": "geolocationclient"
 }

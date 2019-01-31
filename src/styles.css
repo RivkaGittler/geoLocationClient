@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  background: white;
+  border: Open Sans Hebrew Light #D9D9D9;
+  font: 400 13.3333px Arial;
+  direction: rtl;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+input, button {
+  height: 30px;
+  border-radius: 5px;
+}
+button{
+  color: white;
+}

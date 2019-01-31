@@ -1,0 +1,12 @@
+<form>
+<div class="center" novalidate [formGroup]="myForm">
+  {{source}}
+  <label>מוצא
+<input formControlName="source"></label>
+<label>יעד
+<input formControlName="destination"></label>
+  <hr>
+<button (click)="goToPopular()">הצג את המרחק</button>
+</div>
+<div></div>
+</form>
