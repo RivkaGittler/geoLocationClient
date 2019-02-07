@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -9,4 +9,5 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'GeoLocation';
+  // @Input() myColor = 'black';
 }
