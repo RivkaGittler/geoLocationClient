@@ -8,8 +8,25 @@
 
 <div class="all">
   <div class="center">
+    <div class="a">
+    <app-show-distance [dis]=dis class="area"></app-show-distance>
+    <div class="line area"></div>
+    <app-popular-search class="area"></app-popular-search>
+  </div>
+  <div class="area">
+    <label>רשימת התוצאות הפופולריות</label>
+<div class="row" *ngFor="let d of distances.slice(0, 5)">
+      <app-popular-for-list [dis]=d></app-popular-for-list>
+    </div>
+  </div>
+</div>
+  <button (click)="goToForm()">סיום</button>
+</div>
+
+<!-- <div class="all">
+  <div class="center">
     <app-show-distance [dis]=dis class="area"></app-show-distance>
     <app-popular-search class="area"></app-popular-search>
   </div>
   <button (click)="goToForm()">סיום</button>
-</div>
+</div> -->
